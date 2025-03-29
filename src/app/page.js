@@ -43,7 +43,7 @@ export default function Home() {
             </section>
 
             {/* Bottom Section */}
-            <section className="bg-white py-12 sm:py-24 lg:py-32">
+            <section className="bg-white py-12 sm:py-24 lg:py-32 border-t border-gray-200">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <h2 className="text-center text-4xl font-semibold text-gray-900">
                         Tooling and Techs
