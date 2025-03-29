@@ -1,141 +1,55 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import ProfilePic from '../../public/83706955.jpg'
-import {bgBlack} from "next/dist/lib/picocolors";
-
-
-// export default function Home() {
-//   return (
-//       <div className="bg-white min-h-screen flex flex-col">
-//           <Navbar/>
-//           <section className="flex items-center justify-between px-16 py-10 flex-grow">
-//               {/* Left Side: Text Content */}
-//               <div className="w-1/2 flex items-center justify-center">
-//                   <div className="space-y-6 max-w-[638px]">
-//                       <h1 className="text-9xl font-serif text-black">Ming Xuan</h1>
-//                       <h2 className="text-3xl font-serif text-black">Graduate Software Engineer</h2>
-//                       <p className="text-2xl font-serif text-black">
-//                           2025 Grad | Full-Stack Developer
-//                       </p>
-//                       <a
-//                           href="#projects"
-//                           className="inline-block bg-black text-white px-10 py-4 rounded-full text-2xl hover:bg-gray-800 transition"
-//                       >
-//                           View Projects
-//                       </a>
-//                   </div>
-//               </div>
-//
-//               {/* Right Side: Profile Picture */}
-//               <div className="w-1/2 flex items-center justify-center">
-//                   <div className="w-[600px] h-[600px]">
-//                       <Image
-//                           src={ProfilePic}
-//                           alt="Ming Xuan Profile Picture"
-//                           width={600}
-//                           height={600}
-//                           className="object-cover"
-//                       />
-//                   </div>
-//               </div>
-//           </section>
-//           <div>
-//               <div className="bg-white py-24 sm:py-32">
-//                   <div className="mx-auto max-w-7xl px-6 lg:px-8">
-//                       <h2 className="text-center text-lg/8 font-semibold text-gray-900">Trusted by the world’s most
-//                           innovative teams</h2>
-//                       <div
-//                           className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-//                           <img className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-//                                src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg"
-//                                alt="Transistor" width="158" height="48"/>
-//                           <img className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-//                                src="https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg"
-//                                alt="Reform" width="158" height="48"/>
-//                           <img className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-//                                src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg"
-//                                alt="Tuple" width="158" height="48"/>
-//                           <img className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-//                                src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg"
-//                                alt="SavvyCal" width="158" height="48"/>
-//                           <img
-//                               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-//                               src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg"
-//                               alt="Statamic" width="158" height="48"/>
-//                       </div>
-//                       <div
-//                           className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-//                           <img className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-//                                src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg"
-//                                alt="Transistor" width="158" height="48"/>
-//                           <img className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-//                                src="https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg"
-//                                alt="Reform" width="158" height="48"/>
-//                           <img className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-//                                src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg"
-//                                alt="Tuple" width="158" height="48"/>
-//                           <img className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-//                                src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg"
-//                                alt="SavvyCal" width="158" height="48"/>
-//                           <img
-//                               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-//                               src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg"
-//                               alt="Statamic" width="158" height="48"/>
-//                       </div>
-//                   </div>
-//               </div>
-//           </div>
-//       </div>
-//   );
-// }
 
 export default function Home() {
     return (
         <div className="bg-white flex flex-col">
             <Navbar />
-            <section className="flex items-center justify-between px-16 min-h-screen">
+            {/* Adjusted first section height for mobile */}
+            <section className="flex flex-col md:flex-row items-center px-4 sm:px-8 lg:px-16 min-h-[50vh] md:min-h-screen">
                 {/* Left Side: Text Content */}
-                <div className="w-1/2 flex items-center justify-center">
-                    <div className="space-y-6 max-w-[638px]">
-                        <h1 className="text-9xl font-serif text-black flex space-x-4">
+                <div className="w-full xl:w-1/2 flex items-center justify-center py-8 xl:py-0">
+                    <div className="space-y-4 md:space-y-6 max-w-[638px]">
+                        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-serif text-black flex flex-col sm:flex-row sm:space-x-4">
                             <span>Ming</span>
                             <span>Xuan</span>
                         </h1>
-                        <h2 className="text-3xl font-serif text-black">Graduate Software Engineer</h2>
-                        <p className="text-2xl font-serif text-black">
+                        <h2 className="text-xl sm:text-2xl md:text-3xl font-serif text-black">Graduate Software Engineer</h2>
+                        <p className="text-lg sm:text-xl md:text-2xl font-serif text-black">
                             2025 Grad | Full-Stack Developer
                         </p>
                         <a
                             href="#projects"
-                            className="inline-block bg-black text-white px-10 py-4 rounded-full text-2xl hover:bg-gray-800 transition"
+                            className="inline-block bg-black text-white px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-lg sm:text-xl md:text-2xl hover:bg-gray-800 transition"
                         >
                             View Projects
                         </a>
                     </div>
                 </div>
 
-                {/* Right Side: Profile Picture */}
-                <div className="w-1/2 flex items-center justify-center">
-                    <div className="w-[600px] h-[600px]">
+                {/* Right Side: Profile Picture - Hidden on smaller screens */}
+                <div className="hidden xl:flex w-full md:w-1/2 items-center justify-center">
+                    <div className="w-full max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] aspect-square">
                         <Image
                             src={ProfilePic}
                             alt="Ming Xuan Profile Picture"
                             width={600}
                             height={600}
-                            className="object-cover"
+                            className="object-cover w-full h-full rounded-lg"
                         />
                     </div>
                 </div>
             </section>
 
             {/* Bottom Section */}
-            <section className="bg-white py-24 sm:py-32">
+            <section className="bg-white py-12 sm:py-24 lg:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <h2 className="text-center text-4xl font-semibold text-gray-900">
                         Tooling and Techs
                     </h2>
-                    <div className={"border border-black p-6 mt-10"}>
-                        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                    <div className="border border-black p-6 mt-6 sm:mt-10">
+                        <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                             <div className="col-span-2 lg:col-span-1 flex items-center justify-center">
                                 <div className="w-[158px] h-[48px]">
                                     <img
@@ -168,8 +82,7 @@ export default function Home() {
                                     <span className="text-gray-900 text-5xl font-semibold">JAVA</span>
                                 </div>
                             </div>
-                            <div
-                                className="col-span-2 col-start-2 sm:col-start-auto lg:col-span-1 flex items-center justify-center">
+                            <div className="col-span-2 col-start-2 sm:col-start-auto lg:col-span-1 flex items-center justify-center">
                                 <div className="w-[158px] h-[48px]">
                                     <img
                                         className="w-full h-full scale-170 object-contain"
@@ -179,8 +92,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                             <div className="col-span-2 lg:col-span-1 flex items-center justify-center">
                                 <div className="w-[158px] h-[48px]">
                                     <img
@@ -217,8 +129,7 @@ export default function Home() {
                                     />
                                 </div>
                             </div>
-                            <div
-                                className="col-span-2 col-start-2 sm:col-start-auto lg:col-span-1 flex items-center justify-center">
+                            <div className="col-span-2 col-start-2 sm:col-start-auto lg:col-span-1 flex items-center justify-center">
                                 <div className="w-[158px] h-[48px]">
                                     <img
                                         className="w-full h-full object-contain"
