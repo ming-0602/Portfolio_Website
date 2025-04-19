@@ -6,7 +6,10 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="flex items-center justify-between py-4 px-4 sm:px-6 border-b border-gray-200 bg-white">
+        <nav
+            className="flex items-center justify-between py-4 px-4 sm:px-6 border-b border-gray-200 bg-white"
+            // className="w-full bg-white px-4 py-2 flex justify-between items-center mb-0 pb-0"
+        >
             {/* Logo */}
             <div className="text-2xl sm:text-3xl md:text-4xl font-serif text-gray-900 whitespace-nowrap">
                 Ming Xuan’s Portfolio
