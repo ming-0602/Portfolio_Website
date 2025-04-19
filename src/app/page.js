@@ -15,13 +15,20 @@ export default function Home() {
                             <span>Ming</span>
                             <span>Xuan</span>
                         </h1>
-                        <h2 className="text-xl sm:text-2xl md:text-3xl font-serif text-black">Graduate Software Engineer</h2>
+                        <h2 className="text-xl sm:text-2xl md:text-3xl font-serif text-black">Graduate Software
+                            Engineer</h2>
                         <p className="text-lg sm:text-xl md:text-2xl font-serif text-black">
                             2025 Grad | Full-Stack Developer
                         </p>
+                        {/*<a*/}
+                        {/*    href="#projects"*/}
+                        {/*    className="inline-block bg-black text-white px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-lg sm:text-xl md:text-2xl hover:bg-gray-800 transition"*/}
+                        {/*>*/}
+                        {/*    View Projects*/}
+                        {/*</a>*/}
                         <a
                             href="#projects"
-                            className="inline-block bg-black text-white px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-lg sm:text-xl md:text-2xl hover:bg-gray-800 transition"
+                            className="inline-block bg-black text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl hover:bg-gray-800 transition"
                         >
                             View Projects
                         </a>
@@ -30,7 +37,7 @@ export default function Home() {
 
                 {/* Right Side: Profile Picture - Hidden on smaller screens */}
                 <div className="hidden xl:flex w-full md:w-1/2 items-center justify-center">
-                    <div className="w-full max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] aspect-square">
+                <div className="w-full max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] aspect-square">
                         <Image
                             src={ProfilePic}
                             alt="Ming Xuan Profile Picture"
@@ -71,7 +78,8 @@ export default function Home() {
                             <div className="col-span-2 lg:col-span-1 flex items-center justify-center">
                                 <div className="w-[158px] h-[48px]">
                                     <img
-                                        src="https://www.shareicon.net/download/2015/08/30/93006_logo.svg"
+                                        // src="https://www.shareicon.net/download/2015/08/30/93006_logo.svg"
+                                        src="https://images.seeklogo.com/logo-png/18/2/python-logo-png_seeklogo-183760.png"
                                         alt="Python"
                                         className="w-full h-full scale-370 object-contain"
                                     />
