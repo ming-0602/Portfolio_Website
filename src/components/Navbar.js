@@ -30,7 +30,7 @@ export default function Navbar() {
                     href="https://github.com/ming-0602"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-zinc-300 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-xl text-lg md:text-xl lg:text-2xl font-serif hover:bg-zinc-400 transition"
+                    className="bg-[#DCDCDC] text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-xl text-lg md:text-xl lg:text-2xl font-serif hover:bg-zinc-400 transition"
                 >
                     GitHub
                 </a>
