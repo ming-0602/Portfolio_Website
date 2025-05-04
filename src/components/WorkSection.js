@@ -264,7 +264,7 @@ const WorkSection = () => {
     ];
 
     return (
-        <section className="py-16 bg-gray-50">
+        <section id="projects" className="py-16 bg-gray-50">
             <div className="container px-4 mx-auto">
                 <div className="mb-12 text-center">
                     <h2 className="mb-2 text-5xl font-bold text-gray-900">My Work</h2>
