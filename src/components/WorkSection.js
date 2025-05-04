@@ -1,5 +1,4 @@
 // // WorkSection.jsx
-
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -100,6 +99,33 @@ const WorkSection = () => {
             links: [
 
                 {type: 'github', url: 'https://github.com/ming-060211/Octo-E-Messages?tab=readme-ov-file'}
+            ]
+        },
+        {
+            title: "Santorini Game for Search Tree Algorithm (AI)",
+            description: "As part of my AI module, I developed a custom game to demonstrate the application of search algorithms in solving complex problems. The project involved designing the game environment and implementing various search strategies such as Breadth-First Search (BFS), Depth-First Search (DFS), and A* to find optimal or efficient solutions. This project showcases my understanding of artificial intelligence fundamentals, algorithm design, and problem-solving in a dynamic setting.",
+            imageUrl: "/images/santorini.png",
+            links: [
+
+                {type: 'github', url: 'https://github.com/ming-0602/Artificial_Inteligence_MTU/blob/main/Assignment/search_algorithm_santorini.py'}
+            ]
+        },
+        {
+            title: "Optimize Traffic Light for Genetic Algorithm (AI)",
+            description: "In this AI project, I applied a genetic algorithm to optimize traffic light timings across a network of intersections. I designed a node-based map where each node represented an intersection with its own signal timing. The genetic algorithm evolved these timings to minimize overall traffic congestion and improve flow efficiency. This project highlights my ability to apply evolutionary computing techniques to real-world problems, showcasing skills in AI, algorithm design, and simulation modeling.",
+            imageUrl: "/images/trafficlight.jpg",
+            links: [
+
+                {type: 'github', url: 'https://github.com/ming-0602/Artificial_Inteligence_MTU/blob/main/Assignment/ga_assignment.ipynb'}
+            ]
+        },
+        {
+            title: "Stock Prediction using Artificial Intelligence (AI)",
+            description: "As part of my AI module, I developed a machine learning model to predict stock prices by integrating and analyzing two real-world financial datasets. The project involved data cleaning, feature engineering, and model training using supervised learning techniques. I explored time-series forecasting and tested multiple models to improve prediction accuracy. This project demonstrates my ability to work with complex datasets, apply data-driven AI approaches, and gain insights from financial data.",
+            imageUrl: "/images/aistock.jpg",
+            links: [
+
+                {type: 'github', url: 'https://github.com/ming-0602/Artificial_Inteligence_MTU/blob/main/Assignment/DataDriven_Assignment.ipynb'}
             ]
         },
     ];

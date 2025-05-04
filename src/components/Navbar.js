@@ -20,10 +20,7 @@ export default function Navbar() {
                 <a href="#experience" className="text-lg md:text-xl lg:text-2xl font-serif text-gray-900 hover:text-gray-700">
                     Experience
                 </a>
-                <a href="#projects" className="text-lg md:text-xl lg:text-2xl font-serif text-gray-900 hover:text-gray-700">
-                    Projects
-                </a>
-                <a href="#contact" className="text-lg md:text-xl lg:text-2xl font-serif text-gray-900 hover:text-gray-700">
+                <a href="mailto:mingxuan8833@gmail.com?subject=Portfolio%20Inquiry%20-%20Job%20Opportunity&body=Hi%20Ming%20Xuan%2C%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect%20about%20a%20potential%20opportunity.%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D" className="text-lg md:text-xl lg:text-2xl font-serif text-gray-900 hover:text-gray-700">
                     Contact
                 </a>
                 <a
@@ -61,14 +58,18 @@ export default function Navbar() {
 
             {/* Mobile Menu - Expands when hamburger is clicked */}
             {isOpen && (
-                <div className="absolute top-16 left-0 right-0 bg-white border-b border-gray-200 flex flex-col items-center space-y-4 py-4 md:hidden">
-                    <a href="#experience" className="text-xl font-serif text-gray-900 hover:text-gray-700" onClick={() => setIsOpen(false)}>
+                <div
+                    className="absolute top-16 left-0 right-0 bg-white border-b border-gray-200 flex flex-col items-center space-y-4 py-4 md:hidden">
+                    <a href="#experience" className="text-xl font-serif text-gray-900 hover:text-gray-700"
+                       onClick={() => setIsOpen(false)}>
                         Experience
                     </a>
-                    <a href="#projects" className="text-xl font-serif text-gray-900 hover:text-gray-700" onClick={() => setIsOpen(false)}>
+                    <a href="#projects" className="text-xl font-serif text-gray-900 hover:text-gray-700"
+                       onClick={() => setIsOpen(false)}>
                         Projects
                     </a>
-                    <a href="#contact" className="text-xl font-serif text-gray-900 hover:text-gray-700" onClick={() => setIsOpen(false)}>
+                    <a href="#contact" className="text-xl font-serif text-gray-900 hover:text-gray-700"
+                       onClick={() => setIsOpen(false)}>
                         Contact
                     </a>
                     <a
