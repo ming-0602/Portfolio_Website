@@ -6,6 +6,9 @@ import Head from 'next/head';
 import Navbar from "@/components/Navbar";
 import ProfilePic from '../../public/83706955.jpg'
 import WorkSection from "@/components/WorkSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import BackToTop from "@/components/BacktoTop";
+import Footer from "@/components/Footer";
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -55,6 +58,7 @@ export default function Home() {
                 )}
             </AnimatePresence>
             <Navbar className="mb-0 pb-0"/>
+            <BackToTop />
             {/* Top Section */}
             <section
                 className="flex flex-col md:flex-row items-center justify-center px-4 sm:px-8 lg:px-16 min-h-[85vh] md:min-h-[90vh] pt-4 md:pt-8 bg-[#F5F5F5]"
@@ -289,6 +293,10 @@ export default function Home() {
 
             {/* Projects Section */}
             <WorkSection />
+
+            <ExperienceSection />
+
+            <Footer />
         </div>
     );
 }
