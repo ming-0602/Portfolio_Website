@@ -331,7 +331,7 @@ export default function Home() {
     return (
         <div className="bg-white flex flex-col">
             <Head>
-                <title>Ming Xuan - Portfolio</title>
+                <title>Ming Xuan Leong - Portfolio</title>
             </Head>
             <AnimatePresence>
                 {isLoading && (
@@ -370,7 +370,7 @@ export default function Home() {
                 <div className="w-full xl:w-1/2 flex items-center justify-center py-4 md:py-6">
                     <div className="space-y-4 md:space-y-6 max-w-[638px]">
                         <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-serif text-black flex flex-col sm:flex-row sm:space-x-4">
-                            <span>Ming Xuan</span>
+                            <span>Ming Xuan Leong</span>
                         </h1>
                         <h2 className="text-xl sm:text-2xl md:text-3xl font-serif text-black">
                             Graduate Software Engineer
