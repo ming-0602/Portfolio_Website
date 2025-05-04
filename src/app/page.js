@@ -224,7 +224,7 @@ export default function Home() {
                                     viewport={{once: true}}
                                     whileHover={{scale: 1.1}}
                                 >
-                                    <img
+                                    <Image
                                         className={`w-full h-full object-contain ${item.scale}`}
                                         src={item.src}
                                         alt={item.alt}
@@ -272,7 +272,7 @@ export default function Home() {
                                     whileHover={{scale: 1.1}}
                                 >
                                     {item.src ? (
-                                        <img
+                                        <Image
                                             className={`w-full h-full object-contain ${item.scale}`}
                                             src={item.src}
                                             alt={item.alt}
