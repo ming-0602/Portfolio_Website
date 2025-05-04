@@ -95,7 +95,7 @@ const WorkSection = () => {
         {
             title: "Real-Time Webhook Notification System – WAZP 3D (Internship)",
             description: "Developed and deployed a real-time webhook-based notification system for 3D printers using Supabase, Google Cloud, and SvelteKit. Reduced response time from 5 seconds to under 1 second and automated alerts via email and SMS, handling 30+ daily events. Leveraged asynchronous processing and serverless architecture to boost efficiency by 40% and cut cloud costs by 30%, while maintaining 99.9% uptime and scalable performance.",
-            imageUrl: "/images/octo-E-messages.png",
+            imageUrl: "/images/octo-e-messages.png",
             links: [
 
                 {type: 'github', url: 'https://github.com/ming-060211/Octo-E-Messages?tab=readme-ov-file'}
