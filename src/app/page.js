@@ -307,7 +307,8 @@ import { useState, useEffect } from 'react';
 import Image from "next/image";
 import Head from 'next/head';
 import Navbar from "@/components/Navbar";
-import ProfilePic from '../../public/83706955.jpg'
+// import ProfilePic from '../../public/83706955.jpg'
+import ProfilePic from '../../public/upscalemedia-transformed (1).jpeg'
 import WorkSection from "@/components/WorkSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import BackToTop from "@/components/BacktoTop";
